@@ -1,0 +1,27 @@
+<component name="customButton" extends="Button">
+    <script type="text/brightscript" uri="CustomButton.brs" />
+
+
+
+    <children>
+        
+        <Label
+            id="btnLabel"
+            text="Custom Button"
+            width="300"
+            height="80"
+            horizAlign="center"
+            vertAlign="center"
+            color="#612fcdff"
+            font="font:MediumSystemFont" 
+        />
+        <Poster
+            id="btnBg"
+            translation="[280,20]"
+            width="30"
+            height="30"
+            uri="pkg:/images/icons8-arrow-100.png"
+        />
+    </children>
+    
+</component>

@@ -1,0 +1,23 @@
+<component name="HomeScene" extends="Group">
+    <script type="text/brightscript" uri="HomeScene.brs"/>
+
+    <children>
+        <Poster id="bgImage" uri="pkg:/images/HomeScreenBg.png" width="1344" height="768" />
+
+         <button
+            id="playButton"
+            translation="[50, 250]"
+            minWidth="100"
+            maxWidth="400"
+            height="60"
+            text="Play"
+            textFont="font:MediumSystemFont"
+            showFocusFootprint="true"
+            focusFootprintBitmapUri = ""
+            focusBitmapUri = ""
+            iconUri=""
+        />
+        
+    </children>
+    
+</component>

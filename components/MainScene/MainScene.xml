@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component  name="MainScene" extends="Scene">
+    <script type="text/brightscript" uri="pkg:/components/MainScene/MainScene.brs" />
+
+
+    <children>
+        <Poster id="bgImage" uri="pkg:/images/Background.jpg" width="1344" height="768" />
+                    
+        <Group id="labelContainer" translation="[600,50]">
+            <Poster id="iconBg" width="50" height="50" uri="pkg:/images/White-circle.png" blendColor="#f5f7f726"/>
+            <Poster id="icon" uri="pkg:/images/output-onlinepngtools.png" translation="[0,0]" width="30" height="30"/>
+        </Group>
+        
+        <Label id="title" text="DS Movi Videos" translation="[550,100]"  vertAlign = "center" font="font:MediumBoldSystemFont"/>
+        <Label id="para" text="Enter your unique code to access playlists" translation="[480,150]"  vertAlign = "center" font="font:TinySystemFont"/>
+
+        <DynamicKeyboard id="keyboard" translation = "[200,200]" maxWidth="500"/>
+
+        <CustomButton id="customBtn" translation="[300,550]"/>
+        
+    </children>
+</component>
+
+    
