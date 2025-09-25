@@ -5,10 +5,13 @@
 
     <children>
         <Poster
-            width = "500"
-            height = "80"
-            uri="pkg:/images/BtnBg.png"
+            id="bgImage"
+            width = "906"
+            height = "50"
+            translation="[7,7]"
+            uri="pkg:/images/dsMovi_Button_focus.png"
         />
+
         <LayoutGroup id="btnGroup" 
             layoutDirection="horiz" 
             horizAlign="center"
@@ -19,6 +22,7 @@
                 id="btnLabel"
                 text="Access Playlists"
                 width="180"
+                color="#612fcdff"
                 font="font:MediumSystemFont" 
             />
             <Poster
@@ -26,6 +30,7 @@
                 width="30"
                 height="30"
                 uri="pkg:/images/icons8-arrow-100.png"
+                blendColor="#612fcdff"
                 
             />
         </LayoutGroup>

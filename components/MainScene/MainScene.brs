@@ -10,19 +10,14 @@ sub init()
     m.keyboard.setFocus(true)
 
     m.keyboard.observeField("text", "onTextChanged")
+    m.customBtn.observeField("buttonSelected", "onCustomBtnClicked")
 end sub
 
 sub onTextChanged(event as Object)
-    query = event.getData()
-    ?"---------------------> " query
+    m.query = event.getData()
+    ?"---------------------> " m.query
     
-    if len(query) = 6 then
-        code = "aaaaaa"
-        if code = query then
-            showHomeScreen()
-        else 
-            showInvalidDialog()
-        end if
+    if len(m.query) = 6 then
     end if
 end sub
 
@@ -41,6 +36,10 @@ sub showInvalidDialog()
     dialog.setFocus(true)
 end sub
 
+sub onCustomBtnClicked()
+    ?"Checking code.... " m.query
+end sub
+
 function onKeyEvent(key as string, press as boolean) as boolean
     if press
         if key = "ok"
@@ -49,15 +48,17 @@ function onKeyEvent(key as string, press as boolean) as boolean
         else if key = "down"
             if m.customBtn.visible = true
                 m.customBtn.setFocus(true)
-                m.customBtn.findNode("btnBg").blendColor="#612fcdff"
-                m.customBtn.findNode("btnLabel").color="#612fcdff"            
+                m.customBtn.findNode("bgImage").blendColor="#8f1475ff"
+                m.customBtn.findNode("btnLabel").color="#faf7faff"
+                m.customBtn.findNode("btnBg").blendColor="#faf7faff"            
                 return true
             end if
         else if key = "up"
             if m.keyboard.visible = true
                 m.keyboard.setFocus(true)
-                m.customBtn.findNode("btnBg").blendColor="#f3f3f3ff"
-                m.customBtn.findNode("btnLabel").color="#f3f3f3ff"
+                m.customBtn.findNode("bgImage").blendColor="#fefefeff"
+                m.customBtn.findNode("btnLabel").color="#612fcdff"
+                m.customBtn.findNode("btnBg").blendColor="#612fcdff"
                 return true
             end if
         end if
