@@ -1,0 +1,17 @@
+# Channel Details
+title=MS Movies
+major_version=1
+minor_version=0
+build_version=1
+
+#Channel Assets (channel ka icon like in App (App image))
+mm_icon_focus_hd=pkg:/images/AppIcon.png
+
+
+# Splash screen (like when we open netflix than animation play for a second)
+splash_screen_hd=pkg:/images/dsmovi-banner-1920x1080.png
+
+# Resolution
+ui_resolutions=hd
+
+rsg_version=1.2
