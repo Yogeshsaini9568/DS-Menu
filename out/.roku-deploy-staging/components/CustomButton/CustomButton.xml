@@ -6,9 +6,9 @@
     <children>
         <Poster
             id="bgImage"
-            width = "906"
-            height = "50"
-            translation="[7,7]"
+            width = "912"
+            height = "56"
+            translation="[4,4]"
             uri="pkg:/images/dsMovi_Button_focus.png"
         />
 
@@ -26,9 +26,9 @@
                 font="font:MediumSystemFont" 
             />
             <Poster
-                id="btnBg"
-                width="30"
-                height="30"
+                id="btnIcon"
+                height="25"
+                width="25"
                 uri="pkg:/images/icons8-arrow-100.png"
                 blendColor="#612fcdff"
                 

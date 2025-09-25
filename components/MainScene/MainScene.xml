@@ -5,6 +5,8 @@
 
     <children>
         <Poster id="bgImage" uri="pkg:/images/Background.jpg" width="1344" height="768" />
+        <!-- <TextEditBox id="customTextBox" width="910" height="45" horizAlign="center" vertAlign="center"
+            hintTextColor="#fdfbfbff" hintText="ENTER CODE" translation="[200,200]" /> -->
                     
         <Group id="labelContainer" translation="[620,50]">
             <Poster id="iconBg" width="50" height="50" uri="pkg:/images/White-circle.png" blendColor="#f5f7f726"/>

@@ -2,6 +2,7 @@ sub init()
     m.iconBg = m.top.findNode("iconBg")
     m.icon = m.top.findNode("icon")
     m.customBtn=m.top.findNode("customBtn")
+    m.customTextBox = m.top.findNode("customTextBox")
 
     iconBound = m.icon.boundingRect()
     m.icon.translation = [(m.iconBg.width-iconBound.width)/2,(m.iconBg.height-iconBound.height)/2]
@@ -15,7 +16,10 @@ end sub
 
 sub onTextChanged(event as Object)
     m.query = event.getData()
+    
     ?"---------------------> " m.query
+    ' m.customTextBox.text = m.query
+    ' ?"--------------------->>>> " m.customTextBox.text
     
     if len(m.query) = 6 then
     end if
@@ -48,21 +52,14 @@ function onKeyEvent(key as string, press as boolean) as boolean
         else if key = "down"
             if m.customBtn.visible = true
                 m.customBtn.setFocus(true)
-                m.customBtn.findNode("bgImage").blendColor="#8f1475ff"
-                m.customBtn.findNode("btnLabel").color="#faf7faff"
-                m.customBtn.findNode("btnBg").blendColor="#faf7faff"            
                 return true
             end if
         else if key = "up"
-            if m.keyboard.visible = true
+            if m.customBtn.hasFocus()
                 m.keyboard.setFocus(true)
-                m.customBtn.findNode("bgImage").blendColor="#fefefeff"
-                m.customBtn.findNode("btnLabel").color="#612fcdff"
-                m.customBtn.findNode("btnBg").blendColor="#612fcdff"
                 return true
             end if
         end if
     end if
     return false
 end function
-
