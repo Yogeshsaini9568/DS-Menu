@@ -34,6 +34,25 @@
                 
             />
         </LayoutGroup>
+
+        <Poster
+            id="msgPoster"
+            width = "912"
+            height = "40"
+            translation="[4,70]"
+            blendColor="#8d1f6a99"
+            uri="pkg:/images/dsMovi_Button_focus.png"
+            visible="false"
+        />
+
+        <Label
+            id="msgLabel"
+            text="Access Code Cannot be Empty. Try Again!"
+            width="500"
+            translation="[260,78]"
+            color="#ff042eff"
+            visible="false"
+        />
     </children>
     
 </component>

@@ -41,7 +41,18 @@ sub showInvalidDialog()
 end sub
 
 sub onCustomBtnClicked()
-    showPlayListScreen()
+    if m.query = invalid or m.query = ""
+        m.customBtn.findNode("msgLabel").visible = true
+        m.customBtn.findNode("msgLabel").text = "Access Code Cannot be Empty. Try Again!"
+        m.customBtn.findNode("msgPoster").visible = true
+    else if len(m.query) <> 6
+        m.customBtn.findNode("msgLabel").visible = true
+        m.customBtn.findNode("msgLabel").text = "Code must be 6 characters"
+        
+        m.customBtn.findNode("msgPoster").visible = true
+    else
+        showPlayListScreen()
+    end if
 end sub
 
 function onKeyEvent(key as string, press as boolean) as boolean

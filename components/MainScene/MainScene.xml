@@ -16,6 +16,8 @@
         <Label id="title" text="DS Movi" translation="[600,100]"  vertAlign = "center" font="font:MediumBoldSystemFont"/>
         <Label id="para" text="Enter your unique code to access playlists" translation="[480,150]"  vertAlign = "center" font="font:TinySystemFont"/>
 
+        <Label id="hintText" text="Enter Access Code" translation="[550,212]" color="0x888888FF" font="font:SmallSystemFont" />
+
         <DynamicKeyboard id="keyboard" translation = "[200,200]" maxWidth="500"/>
 
         <CustomButton id="customBtn" translation="[200,550]"/>

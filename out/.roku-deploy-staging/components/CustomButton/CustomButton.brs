@@ -5,7 +5,11 @@ sub init()
   m.bgImage = m.top.findNode("bgImage")
   m.btnLabel = m.top.findNode("btnLabel")
   m.btnIcon = m.top.findNode("btnIcon")
-    
+  m.msgPoster = m.top.findNode("msgPoster")
+  m.msgLabel = m.top.findNode("msgLabel")
+
+  ' bound = m.msgLabel.boundingRect()
+  ' m.msgLabel.translation = [(m.msgPoster.width-bound.width)/2,(m.msgPoster.height-bound.height)/2]   
 end sub
 
 function setDefaults()
