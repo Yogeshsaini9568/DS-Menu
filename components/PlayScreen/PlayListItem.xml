@@ -1,0 +1,19 @@
+<component name = "PlayListItem" extends = "Group" >
+  <script type="text/brightscript" uri="PlayListItem.brs" />
+
+  <interface> 
+    <field id = "itemContent" type = "node" onChange = "itemContentChanged"/> 
+  </interface>
+ 
+  <children >
+    <Poster 
+      id = "itemPoster"
+      width = "440" 
+      height = "320" 
+      loadWidth = "440" 
+      loadHeight = "320"
+    />
+
+  </children>
+
+</component>

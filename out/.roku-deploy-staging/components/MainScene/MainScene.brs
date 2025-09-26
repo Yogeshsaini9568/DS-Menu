@@ -3,6 +3,7 @@ sub init()
     m.icon = m.top.findNode("icon")
     m.customBtn=m.top.findNode("customBtn")
     m.customTextBox = m.top.findNode("customTextBox")
+    m.playlistScreen = m.top.findNode("playlistScreen")
 
     iconBound = m.icon.boundingRect()
     m.icon.translation = [(m.iconBg.width-iconBound.width)/2,(m.iconBg.height-iconBound.height)/2]
@@ -22,14 +23,13 @@ sub onTextChanged(event as Object)
     ' ?"--------------------->>>> " m.customTextBox.text
     
     if len(m.query) = 6 then
+        showPlayListScreen()
     end if
 end sub
 
-sub showHomeScreen()
-    m.homePage = CreateObject("roSGNode", "HomeScene")
-    m.top.appendChild(m.homePage)
-    m.top.focusable = false
-    m.homePage.setFocus(true)
+sub showPlayListScreen()
+    m.playlistScreen.visible = true
+    m.playlistScreen.findNode("playListGrid").setFocus(true)
 end sub
 
 sub showInvalidDialog()

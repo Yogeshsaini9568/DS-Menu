@@ -1,0 +1,26 @@
+<component name="PlayListScreen" extends="Group" >
+    <script type="text/rightscript" uri="PlayListScreen.brs" />
+    
+    <children>
+    <Rectangle width = "1920" height = "1080" color = "#000000"/>
+        <MarkupGrid
+            id="PlayListGrid"
+            itemComponentName="PlayListItem"
+            numColumns="2"
+            numRows="8"
+            itemSize="[440, 320]"
+            itemSpacing="[25,25]"
+            drawFocusFeedback="true"
+            vertFocusAnimationStyle= "floatingFocus"
+            translation="[15,15]" 
+        />
+
+        <Video
+            id="videoPlayer"
+            width="1280"
+            height="720"
+            translation="[0,0]"
+            visible="false"
+        /> 
+    </children>
+</component>

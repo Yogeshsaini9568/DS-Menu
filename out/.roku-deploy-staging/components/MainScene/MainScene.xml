@@ -19,6 +19,8 @@
         <DynamicKeyboard id="keyboard" translation = "[200,200]" maxWidth="500"/>
 
         <CustomButton id="customBtn" translation="[200,550]"/>
+
+        <PlayListScreen id="playlistScreen" translation="[0,0]" visible="false"/>
         
     </children>
 </component>

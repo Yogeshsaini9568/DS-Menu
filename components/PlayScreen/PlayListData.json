@@ -1,0 +1,33 @@
+{
+    "status": true,
+    "data": [
+        {
+            "id": "f1617be9-b441-45b8-b708-1e75cb49cab8",
+            "name": "korean",
+            "profileId": "5a7d4d1e-2de7-4d61-88fd-b30d84a94a60",
+            "assetThumbURL": "https://vz-f8bd38f9-0a1.b-cdn.net/48211eff-bb7a-407a-9308-e635b7d12e78/thumbnail.jpg",
+            "total_items": 1
+        },
+        {
+            "id": "e3f5f2e7-f54d-4232-86a1-65b507ccfd63",
+            "name": "food4",
+            "profileId": "5a7d4d1e-2de7-4d61-88fd-b30d84a94a60",
+            "assetThumbURL": "https://ds-menu-video-cms.b-cdn.net/1758099361748.png",
+            "total_items": 7
+        },
+        {
+            "id": "29eb9b94-08f4-43c2-a4d9-3969084c1e2f",
+            "name": "food2",
+            "profileId": "5a7d4d1e-2de7-4d61-88fd-b30d84a94a60",
+            "assetThumbURL": "https://vz-f8bd38f9-0a1.b-cdn.net/ed258de3-a4c6-4e40-8847-1601c168b97f/thumbnail.jpg",
+            "total_items": 3
+        },
+        {
+            "id": "53037168-fd58-44fc-8bee-293704d8386b",
+            "name": "food3",
+            "profileId": "5a7d4d1e-2de7-4d61-88fd-b30d84a94a60",
+            "assetThumbURL": "https://vz-f8bd38f9-0a1.b-cdn.net/99a40409-60e9-48a8-8fcc-5a1fdeee74f2/thumbnail.jpg",
+            "total_items": 1
+        }
+    ]
+}
