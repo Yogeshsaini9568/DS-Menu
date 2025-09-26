@@ -30,10 +30,10 @@ end sub
 
 
 
-sub onPlayButtonSelected()
+sub onPlayButtonSelected(event)
     
-    'content = m.top.content 
-    'if content <> invalid
+    content = m.playlistGrid.content.getChild(event.getData())
+    if content <> invalid
         videoNode = CreateObject("roSGNode", "contentNode")
         videoNode.url = "https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
         videoNode.streamFormat = "auto"
@@ -41,7 +41,7 @@ sub onPlayButtonSelected()
         m.videoNode.visible = true
         m.videoNode.control = "play"
         m.videoNode.setFocus(true)
-    'end if
+    end if
 end sub
 
 function onKeyEvent(key as string, press as boolean) as boolean

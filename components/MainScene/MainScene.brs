@@ -23,7 +23,7 @@ sub onTextChanged(event as Object)
     ' ?"--------------------->>>> " m.customTextBox.text
     
     if len(m.query) = 6 then
-        showPlayListScreen()
+        
     end if
 end sub
 
@@ -41,7 +41,7 @@ sub showInvalidDialog()
 end sub
 
 sub onCustomBtnClicked()
-    ?"Checking code.... " m.query
+    showPlayListScreen()
 end sub
 
 function onKeyEvent(key as string, press as boolean) as boolean
