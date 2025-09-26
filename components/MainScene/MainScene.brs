@@ -4,6 +4,7 @@ sub init()
     m.customBtn=m.top.findNode("customBtn")
     m.customTextBox = m.top.findNode("customTextBox")
     m.playlistScreen = m.top.findNode("playlistScreen")
+    m.hintText = m.top.findNode("hintText")
 
     iconBound = m.icon.boundingRect()
     m.icon.translation = [(m.iconBg.width-iconBound.width)/2,(m.iconBg.height-iconBound.height)/2]
@@ -19,6 +20,11 @@ sub onTextChanged(event as Object)
     m.query = event.getData()
     
     ?"---------------------> " m.query
+    if m.query = ""
+        m.hintText.text="Enter Access Code"
+    else
+        m.hintText.text=""
+    end if
     ' m.customTextBox.text = m.query
     ' ?"--------------------->>>> " m.customTextBox.text
     
@@ -48,7 +54,7 @@ sub onCustomBtnClicked()
     else if len(m.query) <> 6
         m.customBtn.findNode("msgLabel").visible = true
         m.customBtn.findNode("msgLabel").text = "Code must be 6 characters"
-        
+
         m.customBtn.findNode("msgPoster").visible = true
     else
         showPlayListScreen()
