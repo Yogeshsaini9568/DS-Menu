@@ -9,9 +9,9 @@ mm_icon_focus_hd=pkg:/images/AppIcon.png
 
 
 # Splash screen (like when we open netflix than animation play for a second)
-splash_screen_hd=pkg:/images/dsmovi-banner-1920x1080.png
+splash_screen_fhd=pkg:/images/dsmovi-banner-1920x1080.png
 
 # Resolution
-ui_resolutions=hd
+ui_resolutions=hd,fhd
 
 rsg_version=1.2
