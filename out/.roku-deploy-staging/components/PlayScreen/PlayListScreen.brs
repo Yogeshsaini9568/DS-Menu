@@ -26,7 +26,6 @@ sub setPlaylistContent()
     content.appendChildren(child)
 
     m.playlistGrid.content = content
-    ' m.playlistGrid.setFocus(true)
 end sub
 
 
@@ -44,3 +43,17 @@ sub onPlayButtonSelected()
         m.videoNode.setFocus(true)
     'end if
 end sub
+
+function onKeyEvent(key as string, press as boolean) as boolean
+    if press
+        if key = "back"
+            if m.videoNode.visible = true
+                m.videoNode.control = "stop"
+                m.videoNode.visible = false
+                m.playlistGrid.setFocus(true)
+                return true
+            end if
+        end if
+    end if
+    return false
+end function
